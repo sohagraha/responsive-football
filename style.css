@@ -1,10 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 1440px;
-}
-.head{
     margin: 0;
-
 }
 h1{
     font-size: 64px;
@@ -19,9 +16,45 @@ h3{
     margin-top: 16px;
     line-height: 16px;
 }
-p{
+.head{
+    background-color: #2D25A0;
+    padding-top: 52px;
 }
-.head-left{
+nav{
+    margin-left: 151px;
+    margin-right: 124px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    display: inline;
+    margin: 0 5px;
+
+}
+.head ul li a, .login-button a{
+    color: white;
+    text-decoration: none;
+}
+.fa-sign-in-alt{
+color: white;
+height: 24px;
+width: 24px;
+margin-right: 8px;
+}
+.login-button{
+    padding: 10px 24px;
+background-color: #E02C6D;
+}
+
+.banner-left{
     padding-left: 156px;
 }
 .moto{
@@ -30,7 +63,7 @@ p{
 .banner{
     display: flex;
     justify-content: space-around;
-    background-color: #2D25A0;
+
     align-items: center;
 }
 .watch-now-button a{
@@ -47,7 +80,7 @@ p{
     height: 24px;
     margin-left: 8px;
 }
-.head-right img{
+.banner-right img{
     height: 438px;
     width: 556px;
     margin-top: 153px;
@@ -76,14 +109,17 @@ p{
     width: 300px;
     height: 256px;
 }
+.highlight-right img{
+    height: 427px;
+    width: 567px;
+}
 footer{
-    margin-top: 150px;
+    margin-top: 158px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer-section{
-
     width: 484px;
     text-align: center;
 }
@@ -96,4 +132,23 @@ footer{
     color: #969BAB;
     height: 32px;
     width: 32px;
+}
+.highlight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 165px;
+}
+.highlight-left{
+    margin-left: 182px;
+}
+#highlight-heading{
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    width: 460px;
+}
+.highlight-right img{
+    margin-right: 156px
 }
