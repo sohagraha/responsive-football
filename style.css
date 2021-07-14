@@ -1,8 +1,13 @@
+/* --------------width-1440 -----------
+-------------------Start----------------*/
 body{
     font-family: 'Poppins', sans-serif;
     width: 1440px;
     margin: 0;
 }
+
+/* ----Common Heading------*/
+
 h1{
     font-size: 64px;
     font-weight: 700;
@@ -16,6 +21,8 @@ h3{
     margin-top: 16px;
     line-height: 16px;
 }
+
+/* ----Header part start--------*/
 .head{
     background-color: #2D25A0;
     padding-top: 52px;
@@ -24,6 +31,7 @@ h3{
 .head:hover .banner-right img{
     transform: scale(1.2);
 }
+/* navigation bar start */
 nav{
     margin-left: 156px;
     margin-right: 249px;
@@ -33,6 +41,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
 .menu{
     display: flex;
     align-items: center;
@@ -59,7 +68,12 @@ nav{
     padding: 10px 24px;
     background-color: #E02C6D;
 }
-
+/* navigation bar end */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .banner-left{
     margin-top: 121px;
     padding-left: 156px;
@@ -71,11 +85,6 @@ nav{
     font-weight: bold;
     font-size: 64px;
     line-height: 80px;
-}
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .watch-now-button a{
     text-decoration: none;
@@ -100,6 +109,10 @@ nav{
     margin-left: 102px;
     transition:2s;
 }
+/* ----Header part End--------*/
+
+/*---style for Players details field Start------*/
+
 .players-section{
     margin-left: 180px;
     margin-right: 210px;
@@ -119,15 +132,89 @@ nav{
     margin: 15px;
 }
 .player-info img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 300px;
     height: 256px;
+}
+/*---style for Players details field End------*/
+.video{
+    padding-top: 50px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+.mobile{
+    display: none;
+}
+/*-----------style for Highlight field start--------------*/
+.highlight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 165px;
+}
+.highlight-left{
+    margin-left: 182px;
+}
+#highlight-heading{
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    width: 460px;
+}
+.highlight-moto p{
+    width: 440px;
 }
 .highlight-right img{
     height: 427px;
     width: 567px;
+    margin-right: 156px
 }
+/*-----------style for highlight field End--------------*/
+
+/*-----------style for Subscribe field start--------------*/
+.subscribe{
+    margin-top: 90px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.subscribe a{
+    margin-left: 20px;
+    padding: 15px 20px;
+    border: 2px solid;
+    border-color: #020202;
+    background-color: #f39c7c;
+    border-radius: 12px;
+    color: white;
+    font-weight: 800;
+}
+.mailbox{
+    font-size: larger;
+    padding:15px 10px;
+    border: 2px solid;
+    border-radius: 3%;
+    background-color: #ebe1de;
+}
+.fa-paper-plane{
+    height: 100px;
+    width: 30px;
+}
+/* only for mobile version */
+.mobile-version{
+    visibility: hidden;
+}
+/*-----------style for Subscribe field End--------------*/
+
+/*-----------style for footer start--------------*/
 footer{
-    margin-top: 158px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,31 +233,21 @@ footer{
     height: 32px;
     width: 32px;
 }
-.highlight{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 165px;
-}
-.highlight-left{
-    margin-left: 182px;
-}
-#highlight-heading{
-    color: black;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
-    width: 460px;
-}
-.highlight-right img{
-    margin-right: 156px
-}
+/*-----------style for footer End--------------*/
+
+/* --------------width-1440 -----------
+-------------------End----------------*/
+
+/* --------------width-360 -----------
+-------------------Start----------------*/
+
 @media only screen and (max-width:360px){
     body{
         font-family: 'Poppins', sans-serif;
         width: 360px;
         margin: 0;
     }
+    /* ----Common Heading------*/
     h1{
         font-size: 36px;
         font-weight: 700;
@@ -184,26 +261,22 @@ footer{
         margin-top: 16px;
         line-height: 40px;
     }
+    /* ----Header part start--------*/
     .head{
         background-color: #2D25A0;
         height: 695px;
     }
     .head:hover .banner-right img{
-        transform: scale(0.);
+        transform: scale(1.005);
     }
+    /* navigation bar hide */
     nav{
         display: none;
+    } 
+    .banner{
+        display: flex;
+        flex-direction: column;
     }
-    .navigation{
-        
-    }
-    .menu{
-        
-    }
-    .menu li{
-        
-    }
-    
     .banner-left{
         margin-top: 52px;
         padding-left: 16px;
@@ -216,10 +289,6 @@ footer{
         font-size: 36px;
         line-height: 50px;
     }
-    .banner{
-        display: flex;
-        flex-direction: column;
-    }
     .banner-right img{
         height: 260px;
         width: 329px;
@@ -229,6 +298,9 @@ footer{
         margin-left: 15px;
         transition:2s;
     }
+    /* ----Header part End--------*/
+
+    /*---style for Players details field Start------*/
     .players-section{
         margin-left: 15px;
         margin-right: 15px;
@@ -250,8 +322,87 @@ footer{
         width: 300px;
         height: 256px;
     }
-    .highlight-right img{
+    /*---style for Players details field End------*/
+    .video{
+        padding-left: 20px;
     }
+    .pc{
+        display: none;
+    }
+    .mobile
+    {
+        display:block;
+    }
+    /*-----------style for Highlight field start--------------*/
+    .highlight{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+     }
+     .highlight-left{
+         margin-left: 15px;
+     }
+     #highlight-heading{
+         color: black;
+         font-weight: 700;
+         font-size: 30px;
+         line-height: 40px;
+         width: 292px;
+     }
+     .highlight-moto p{
+         width: 329px;
+     }
+     .highlight-right img{
+         height: 248px;
+         width: 328px;
+         margin: 29px;
+     }
+     /*-----------style for highlight field End--------------*/
+    /*-----------style for Subscribe field start--------------*/
+    .subscribe{
+        margin-top: 29px;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .subscribe a{
+        margin-left: 20px;
+        padding: 15px 20px;
+        border: 2px solid;
+        border-color: #020202;
+        background-color: #f39c7c;
+        border-radius: 12px;
+        color: white;
+        font-weight: 800;
+        margin-top: 50px;
+    }
+    .mailbox{
+        font-size: larger;
+        padding:15px 10px;
+        border: 2px solid;
+        border-radius: 3%;
+        background-color: #ebe1de;
+    }
+    .fa-paper-plane{
+        height: 100px;
+        width: 30px;
+    }
+    
+    .dekstop{
+        visibility:hidden;
+    }
+    .mobile-version
+    {
+        margin:0;
+        padding: 0;
+        visibility:visible;
+        position:relative;
+
+    }
+    /*-----------style for Subscribe field End--------------*/
+
+    /*-----------style for footer start--------------*/
     footer{
         margin-top: 43px;
         display: flex;
@@ -266,32 +417,12 @@ footer{
         margin-left: 16px;
         height: 63px;
     }
-    .social-icon{
-      
-    }
     .icon{
         color: #969BAB;
         height: 32px;
         width: 32px;
     }
-    .highlight{
-       display: flex;
-       flex-direction: column;
-       margin-top: 60px;
-    }
-    .highlight-left{
-        margin-left: 15px;
-    }
-    #highlight-heading{
-        color: black;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-        width: 292px;
-    }
-    .highlight-right img{
-        height: 248px;
-        width: 328px;
-        margin: 29px;
-    }
+    /*-----------style for footer End--------------*/
 }
+/* --------------width-360 -----------
+-------------------End----------------*/
